@@ -2,7 +2,6 @@
 
 .hero {
   position: relative;
-  min-height: calc(100vh - 4.5rem);
   padding: var(--spacing-16) 0;
   overflow: hidden;
   background-color: var(--gray-50);
