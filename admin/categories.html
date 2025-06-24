@@ -84,7 +84,7 @@
                             <span>Quản lý tài liệu</span>
                         </a>
                     </li>
-                    <li class="admin-menu-item active">
+                    <li class="admin-menu-item">
                         <a href="categories.html">
                             <i class="fas fa-folder"></i>
                             <span>Quản lý danh mục</span>
@@ -106,6 +106,12 @@
                         <a href="reports.html">
                             <i class="fas fa-flag"></i>
                             <span>Báo cáo vi phạm</span>
+                        </a>
+                    </li>
+                    <li class="admin-menu-item">
+                        <a href="ip-bans.html">
+                            <i class="fas fa-ban"></i>
+                            <span>IP bị cấm</span>
                         </a>
                     </li>
                     <li class="admin-menu-item">
@@ -201,6 +207,7 @@
                     <button class="add-new-btn" id="addCategoryBtn">
                         <i class="fas fa-plus"></i> Thêm danh mục
                     </button>
+                    <button id="deleteSelectedBtn" class="btn danger add-new-btn">Xóa mục đã chọn</button>
                     <button class="export-btn">
                         <i class="fas fa-download"></i> Xuất dữ liệu
                     </button>
@@ -463,7 +470,7 @@
                         <tr>
                             <td>
                                 <div class="checkbox-wrapper">
-                                    <input type="checkbox" id="category1">
+                                    <input type="checkbox" class="category-checkbox" data-category-id="1" id="category1">
                                     <label for="category1"></label>
                                 </div>
                             </td>
@@ -493,7 +500,7 @@
                         <tr>
                             <td>
                                 <div class="checkbox-wrapper">
-                                    <input type="checkbox" id="category2">
+                                    <input type="checkbox" class="category-checkbox" data-category-id="2" id="category2">
                                     <label for="category2"></label>
                                 </div>
                             </td>
@@ -523,7 +530,7 @@
                         <tr>
                             <td>
                                 <div class="checkbox-wrapper">
-                                    <input type="checkbox" id="category3">
+                                    <input type="checkbox" class="category-checkbox" data-category-id="3" id="category3">
                                     <label for="category3"></label>
                                 </div>
                             </td>
@@ -553,7 +560,7 @@
                         <tr>
                             <td>
                                 <div class="checkbox-wrapper">
-                                    <input type="checkbox" id="category4">
+                                    <input type="checkbox" class="category-checkbox" data-category-id="4" id="category4">
                                     <label for="category4"></label>
                                 </div>
                             </td>
@@ -583,7 +590,7 @@
                         <tr>
                             <td>
                                 <div class="checkbox-wrapper">
-                                    <input type="checkbox" id="category5">
+                                    <input type="checkbox" class="category-checkbox" data-category-id="5" id="category5">
                                     <label for="category5"></label>
                                 </div>
                             </td>
@@ -613,7 +620,7 @@
                         <tr>
                             <td>
                                 <div class="checkbox-wrapper">
-                                    <input type="checkbox" id="category6">
+                                    <input type="checkbox" class="category-checkbox" data-category-id="6" id="category6">
                                     <label for="category6"></label>
                                 </div>
                             </td>
